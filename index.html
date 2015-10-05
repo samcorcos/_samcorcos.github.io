@@ -73,9 +73,9 @@
             I started working on an <a href="https://github.com/samcorcos/campaign-hawk">open-source</a> campaign management app, which I have given the working title "CampaignHawk". It's built with Meteor and React and makes ample use of Mapbox for the data overlays.
             <div style="display:flex;flex-direction:row;justify-content:center;align-items:center;">
               <div style="width:40%;padding-right:20px;">
-                Every step of the process from navbar to data layer toggling is documented in a <a href="https://medium.com/@SamCorcos/building-campaignhawk-an-open-source-election-canvassing-app-with-meteor-and-react-part-1-aff5e8e19a32">series of 22 articles</a> on Medium. I'm planning to write a few more on testing with Cucumber at some point.
+                The data you're looking at to the right is a basic implementation of the built-in clustering algorithm used by Mapbox as well as some turf.js functions and color scaling with D3. The first shows all voters in the district; the second shows the district divided into precincts and colored based on political orientation; the third filters out unlikely voters.
                 <br><br>
-                The voter data comes from a REST API. Most of the heavy lifting is done by Mapbox, which makes adding data layers very easy.
+                Every step of the process from navbar to data layer toggling is documented in a <a href="https://medium.com/@SamCorcos/building-campaignhawk-an-open-source-election-canvassing-app-with-meteor-and-react-part-1-aff5e8e19a32">series of 22 articles</a> on Medium. I'm planning to write a few more on testing with Cucumber at some point.
               </div>
               <div style="width:60%;padding:5px;">
                 <img src="out.gif" alt="">
