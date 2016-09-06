@@ -36,7 +36,7 @@
         <h2>Site of Sam Corcos</h2>
       </div>
       <div class="timestamp">
-        Last updated: 8 February 2015
+        Last updated: 6 September 2016
       </div>
     </header>
 
@@ -52,11 +52,11 @@
                 <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAJBAAAAJGQzYzgyMjFjLWE0MjYtNGQxOS05ZTA0LWVkMTkwNTEwN2E4ZA.jpg" alt="Sam Corcos profile image" style="max-width:100%;border-radius:5px;" />
               </div>
               <div style="width:70%;padding-left:10px;">
-                I'm a software developer. I work with <a href="http://www.phoenixframework.org/">Phoenix</a> and <a href="http://meteor.com">Meteor.js</a>, along with a host of other technologies including React, Redux, Mapbox, D3, and many others.
+                I'm a software developer. I work with <a href="http://www.phoenixframework.org/">Phoenix</a> and <a href="http://meteor.com">Meteor.js</a>, along with a host of other technologies including React, Redux, Elixir, AWS, Mapbox, and D3, to name just a few.
                 <br><br>
                 My latest project, <a href="https://sightlinemaps.com">Sightline Maps</a>, is a platform for easily 3D printing topographical maps, primarily for the U.S. Military.
                 <br><br>
-                I'm in the process of creating a tutorial site for the new Phoenix framework. Hopefully we'll go live by the end of March!
+                I also launched a tutorial site for the Phoenix Framework cleverly named <a href="https://www.learnphoenix.io">LearnPhoenix.io</a>. I think Phoenix has the potential to be the new standard for highly-concurrent, distributed web applications (though it has applications outside of web as well).
               </div>
             </div>
           </p>
@@ -67,14 +67,33 @@
           <p>
             As mentioned above, <a href="https://sightlinemaps.com">Sightline Maps</a> is a platform for 3D printing topographical maps. The target customers are military and special operations, but we have also found applications in education, mountain climbing, oil exploration, and a variety of environmental groups.
           </p>
-          <div style="width: 60%; float: left;">
-            <img src="http://sightlinemaps.com/images/everest.gif">
+          <div style="display: flex; flex-direction: row nowrap;">
+            <img style="width: 60%; height: auto; border: 1px solid #ccc; border-radius: 5px; margin-bottom: 1rem;" src="https://s3-us-west-2.amazonaws.com/sightline-maps-static-assets/GIFs/Grand+Canyon+GIF/GrandCanyonExtrude_384x216_1MB.gif">
+            <div style="width: 40%; padding-left: 10px;">
+              The Sightline Maps frontend was originally built with Meteor.js and Mapbox for the most part. Our backend was a Python/Flask server which handled all of our image processing. Meteor.js handled the frontend, user authentication, purchases, and was our primary interface for our Flask API.
+            </div>
           </div>
-          <div style="width: 40%; float: left;">
-            Sightline is built with Meteor.js and Mapbox for the most part. We are running a Python/Flask backend to handle image processing, and using Meteor.js for the frontend and for user authentication.
+          <div style="display: flex; flex-direction: row nowrap;">
+            <img style="width: 60%; height: auto; border: 1px solid #ccc; border-radius: 5px; margin-bottom: 1rem;" src="https://s3-us-west-2.amazonaws.com/sightline-maps-static-assets/GIFs/Mt+St+Helens+GIF/MtStHelens_384x216_2MB.gif">
+            <div style="width: 40%; padding-left: 10px;">
+              We recently rebuilt our app with a new stack: React + Lambda + Phoenix. We published a <a href="#">blog post</a> describing the transition in more detail. The short version is that our app is mostly serverless now and we can handle an almost unlimited amount of traffic thanks to AWS Lambda and Phoenix.
+            </div>
           </div>
 
-          <div class="clearfix"></div>
+          <h3 id="learnphoenix" href="learnphoenix">
+            LearnPhoenix.io
+          </h3>
+          <p>
+            The Phoenix Framework is built on Elixir and Erlang and is meant for highly-concurrent, distributed applications. It's mostly used for web apps, but it's also great for other use cases (see the awesome <a href="http://nerves-project.org/">Nerves Project</a> for more info). I built a tutorial site in which you learn how to build an extensible Intercom-style chat application for communicating with potential customers.
+          </p>
+          <div style="display: flex; flex-direction: row nowrap;">
+            <img style="width: 90%; align-self: center; margin-bottom: 1rem;" src="https://s3.amazonaws.com/learnphoenix-static-assets/images/large-banner.png">
+          </div>
+          <div style="display: flex; flex-direction: row nowrap;">
+            <div style="width: 100%;">
+              The app is built as a statically-hosted React/Redux frontend with a Phoenix JSON API as the backend. It's an intermediate-advanced level tutorial series, so you'll have to at least be comfortable with functions and libraries before you get started. 
+            </div>
+          </div>
 
           <h3 id="writing" href="writing">
             Writing
@@ -82,6 +101,18 @@
           <p>
             Most of my writing can be found on <a href="http://medium.com/@samcorcos">Medium</a>. My articles tend to have a Meteor-bend to them. Among the subjects I've written about are:
             <ul style='list-style-type: circle;'>
+              <li><a href="https://blog.learnphoenix.io/making-database-changes-in-a-deployed-phoenix-app-9d2b6f6c3224#.mx8c1p2dy">
+                Making Database Changes in a Deployed Phoenix App
+              </a></li>
+              <li><a href="https://medium.freecodecamp.com/where-do-i-belong-a-guide-to-saving-react-component-data-in-state-store-static-and-this-c49b335e2a00#.sinlje7ov">
+                Where to Hold React Component Data: state, store, static, and this
+              </a></li>
+              <li><a href="https://blog.learnphoenix.io/how-long-should-i-make-my-api-key-833ebf2dc26f#.91nm5w1qj">
+                How Long Should I Make My API Key?
+              </a></li>
+              <li><a href="https://medium.freecodecamp.com/git-cheat-sheet-and-best-practices-c6ce5321f52#.kul9c349t">
+                Here are all the Git commands I used last week, and what they do.
+              </a></li>
               <li><a href="https://medium.com/@SamCorcos/building-campaignhawk-an-open-source-election-canvassing-app-with-meteor-and-react-part-1-aff5e8e19a32">
                 Building an Open-Source Election Canvassing App with Meteor, React, and Mapbox
               </a></li>
